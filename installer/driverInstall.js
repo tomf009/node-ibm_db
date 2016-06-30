@@ -358,6 +358,8 @@ var download_file_httpget = function(file_url) {
                             }
                         }
                     }
+                    console.log('Downloading driver:');
+                    console.log(JSON.stringify(options));
                     return http.get(options, downloadCLIDriver); 
                 });
             } else 
